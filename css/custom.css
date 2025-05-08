@@ -42,10 +42,10 @@
 	--primary-color			: #192324;
 	--secondery-color		: #F8F8F8;
 	--text-color			: #283132;
-	--accent-color			: #7C877F;
-	--white-color			: #FFFFFF;
+	--accent-color			: #7c877f;
+	--white-color			: #ffffff;
 	--divider-color			: #EAF0EC;
-	--dark-divider-color	: #FFFFFF1A;
+	--dark-divider-color	: hsla(0, 0%, 100%, 0.102);
 	--error-color			: rgb(230, 87, 87);
 	--default-font			: "Hanken Grotesk", sans-serif;
 }
@@ -199,11 +199,15 @@ body{
     transition: all 0.5s ease-in-out;
     overflow: hidden;
     z-index: 0;
+	color: white !important;
+	border-radius: 5px;
+	background-color: var(--accent-color) !important;
 }
 
 .btn-default:hover{
-	background: transparent;
-    color: var(--white-color);
+	/* background: transparent; */
+	background-color:black !important;
+    color: var(--white-color) !important;
 }
 
 .btn-default::before{
@@ -223,6 +227,7 @@ body{
 
 .btn-default:hover::before{
 	transform: translate(-18px, -50%);
+	
 }
 
 .btn-default::after{
@@ -239,6 +244,7 @@ body{
     transform: skew(45deg);
     transition: all 0.4s ease-in-out;
     z-index: -1;
+	background-color:black !important;
 }
 
 .btn-default:hover:after{
@@ -426,22 +432,37 @@ body{
 /************************************/
 /**** 	   03. Header css		 ****/
 /************************************/
+.header-sticky{
+	position: fixed !important;
+	top: 0;
+	left: 0;
+	right: 0;
+	z-index: 100;
+	background-color: var(--white-color);
+	box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+	transition: all 0.3s ease-in-out;
+}
 
 header.main-header{
 	position: relative;
 	z-index: 100;
+
+	background-color: #FFFFFF;
+	
 }
 
 header.main-header .header-sticky{
 	position: relative;
 	top: 0;
 	z-index: 100;
+
 }
 
 header.main-header .header-sticky.hide{
 	transform: translateY(-100%);
 	transition: transform 0.3s ease-in-out;
 	border-radius: 0;
+	
 }
 
 header.main-header .header-sticky.active{
@@ -450,24 +471,37 @@ header.main-header .header-sticky.active{
 	left: 0;
 	right: 0;
 	border-radius: 0;
+	
     transform: translateY(0);
 	background: var(--primary-color);
 	border-bottom: 1px solid var(--dark-divider-color);
 }
 
 .navbar{
-	padding: 30px 0;
+	width: 100%;
+	padding: 0px 0;
 	align-items: center;
+color: black;
 	border-bottom: 1px solid var(--dark-divider-color);
 }
 
+.nav-link{
+	color: #192324 !important;
+	font-family: poppins, sans-serif !important;
+	font-size: medium !important;
+	font-weight: 300 !important;
+}
 header.main-header .header-sticky.active .navbar{
 	border-bottom: none;
+	
 }
 
 .navbar-brand{
 	padding: 0;
 	margin: 0;
+	width: 200px;
+	height: 100px;
+
 }
 
 .main-menu .nav-menu-wrapper{
@@ -522,6 +556,7 @@ header.main-header .header-sticky.active .navbar{
 	position: absolute;
 	left: 0;
 	top: 100%;
+	color: black !important;
 	background-color: var(--accent-color);
 	transition: all 0.3s ease-in-out;
 	text-align: left;
@@ -551,10 +586,11 @@ header.main-header .header-sticky.active .navbar{
 .main-menu ul ul li{
 	margin: 0;
 	padding: 0;
+	color: black !important;
 }
 
 .main-menu ul ul li a{
-	color: var(--white-color);
+	color: white !important;
 	padding: 6px 20px !important;
 	transition: all 0.3s ease-in-out;
 }
@@ -649,7 +685,7 @@ header.main-header .header-sticky.active .navbar{
 	font-weight: 400;
 	text-transform: capitalize;
 	padding: 10px 20px;
-	color: var(--white-color);
+	color: white !important;
 	line-height: normal;
 	margin: 0;
 	border-radius: 0 !important;
@@ -701,7 +737,7 @@ header.main-header .header-sticky.active .navbar{
 	background-size: cover;
 	padding: 280px 0 250px;
 	min-height: 100vh;
-	margin-top: -118px;
+	margin-top: 0px;
 }
 
 .hero::before{
@@ -3613,7 +3649,7 @@ header.main-header .header-sticky.active .navbar{
 @media only screen and (max-width: 991px){
 
 	.navbar{
-		padding: 20px 0;
+		padding:0px 0;
 	}
 	
 	.slicknav_nav li,
@@ -3628,10 +3664,12 @@ header.main-header .header-sticky.active .navbar{
 
 	.header-btn{
 		display: none;
+		border: 10px;
 	}
 
 	.btn-default{
 		padding: 14px 42px 14px 16px;
+	
 	}
 
 	.section-row{
@@ -3676,7 +3714,7 @@ header.main-header .header-sticky.active .navbar{
 	.hero{
 		min-height: auto;
 		padding: 180px 0 140px;
-		margin-top: -92px;
+		margin-top: 0px;
 	}
 
 	.hero.hero-slider-layout .hero-slide{
