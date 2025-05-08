@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html lang="zxx">
 
-<!-- Mirrored from html.awaikenthemes.com/inspaire/contact.html by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 05 May 2025 11:13:23 GMT -->
 <head>
 	<!-- Meta -->
 	<meta charset="utf-8">
@@ -35,6 +34,137 @@
 	<!-- Main Custom Css -->
 	<link href="css/custom.css" rel="stylesheet" media="screen">
 </head>
+<style>
+    /* Enhanced Styles */
+    input, textarea {
+        border-radius: 12px;
+        border: 1px solid #e0e0e0;
+        transition: all 0.3s ease;
+        box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+    }
+    
+    input:focus, textarea:focus {
+        border-color: #8a6d3b;
+        box-shadow: 0 0 0 3px rgba(138,109,59,0.2);
+        transform: translateY(-2px);
+    }
+    
+    iframe {
+        border-radius: 12px;
+        box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+        transition: all 0.5s ease;
+    }
+    
+    iframe:hover {
+        transform: scale(1.01);
+        box-shadow: 0 15px 40px rgba(0,0,0,0.15);
+    }
+    
+    .contact-info-box {
+        background: linear-gradient(135deg, #f9f9f9 0%, #ffffff 100%);
+        position: relative;
+        overflow: hidden;
+    }
+    
+    .contact-info-box::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: radial-gradient(circle at 20% 50%, rgba(138,109,59,0.1) 0%, transparent 70%);
+        z-index: 0;
+    }
+    
+    .contact-info-item {
+        transition: all 0.4s ease;
+        position: relative;
+        z-index: 1;
+        background: rgba(255,255,255,0.8);
+        backdrop-filter: blur(5px);
+        border-radius: 12px;
+        padding: 20px;
+    }
+    
+    .contact-info-item:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+        background: rgba(255,255,255,0.95);
+    }
+    
+    .icon-box {
+        background: linear-gradient(135deg, #8a6d3b 0%, #c0a16b 100%);
+        color: white;
+        border-radius: 10px;
+        transition: all 0.3s ease;
+    }
+    
+    .contact-info-item:hover .icon-box {
+        transform: rotate(10deg) scale(1.1);
+    }
+    
+    .btn-default {
+        transition: all 0.3s ease;
+        position: relative;
+        overflow: hidden;
+    }
+    
+    .btn-default:hover {
+        transform: translateY(-3px);
+        box-shadow: 0 5px 15px rgba(138,109,59,0.3);
+    }
+    
+    .btn-default::after {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: -100%;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(90deg, transparent, rgba(255,255,255,0.2), transparent);
+        transition: all 0.5s ease;
+    }
+    
+    .btn-default:hover::after {
+        left: 100%;
+    }
+    
+    /* Floating animation for contact items */
+    @keyframes float {
+        0% { transform: translateY(0px); }
+        50% { transform: translateY(-10px); }
+        100% { transform: translateY(0px); }
+    }
+    
+    .wow.fadeInUp {
+        animation-delay: 0.1s;
+    }
+    
+    /* Pulse animation for icons */
+    @keyframes pulse {
+        0% { transform: scale(1); }
+        50% { transform: scale(1.1); }
+        100% { transform: scale(1); }
+    }
+    
+    .contact-info-item:hover .icon-box i {
+        animation: pulse 1s ease infinite;
+    }
+    
+    /* Responsive adjustments */
+    @media (max-width: 992px) {
+        .contact-info-item {
+            width: calc(50% - 10px) !important;
+        }
+    }
+    
+    @media (max-width: 768px) {
+        .contact-info-item {
+            width: 100% !important;
+        }
+    }
+</style>
 <body>
 
     <!-- Preloader Start -->
@@ -109,10 +239,7 @@
 					<div class="page-header-box">
 						<h1 class="text-anime-style-2" data-cursor="-opaque">Conatct us</h1>
 						<nav class="wow fadeInUp">
-							<ol class="breadcrumb">
-								<li class="breadcrumb-item"><a href="index.html">home</a></li>
-								<li class="breadcrumb-item active" aria-current="page">conatct us</li>
-							</ol>
+						
 						</nav>
 					</div>
 					<!-- Page Header Box End -->
@@ -128,15 +255,15 @@
             <div class="row">
                 <div class="col-lg-6">
                     <!-- Contact Us Image Start -->
-                    <div class="contact-us-image">
+                    <div class="contact-us-image wow fadeInLeft" style="box-shadow: rgba(136, 165, 191, 0.48) 6px 2px 16px 0px, rgba(255, 255, 255, 0.8) -6px -2px 16px 0px; border-radius:12px; overflow:hidden;">
                         <figure class="image-anime reveal">
-                            <img src="images/contact-us-image.jpg" alt="">
+                            <img src="images/contact-us-image.jpg" alt="" style="border-radius:12px; transition: transform 0.5s ease; width:100%;">
                         </figure>
                     </div>
                     <!-- Contact Us Image End -->
                 </div>
                 
-                <div class="col-lg-6">
+                <div class="col-lg-6 wow fadeInRight" style="box-shadow: rgba(136, 165, 191, 0.48) 6px 2px 16px 0px, rgba(255, 255, 255, 0.8) -6px -2px 16px 0px; border-radius:12px; background:white; padding:30px;">
                     <!-- Contact Us Form Start -->
                     <div class="contact-us-form">
                         <!-- Section Title Start -->
@@ -168,12 +295,12 @@
                                     </div>
 
                                     <div class="form-group col-md-12 mb-5">
-                                        <textarea name="message" class="form-control" id="message" rows="4" placeholder="Your Message"></textarea>
+                                        <textarea name="message" class="form-control" id="message" rows="4" placeholder="Your Message" required style="min-height:120px;"></textarea>
                                         <div class="help-block with-errors"></div>
                                     </div>
 
                                     <div class="col-md-12">
-                                        <button type="submit" class="btn-default">submit</button>
+                                        <button type="submit" class="btn-default" style="padding:12px 30px; border-radius:8px; background:#8a6d3b; color:white; border:none; font-weight:600;">submit</button>
                                         <div id="msgSubmit" class="h3 hidden"></div>
                                     </div>
                                 </div>
@@ -203,67 +330,66 @@
                     <!-- Section Title End -->
                 </div>
 
-                <div class="col-lg-12">
+                <div class="col-lg-12 wow zoomIn" data-wow-delay="0.3s">
                     <!-- Google Map IFrame Start -->
                     <div class="google-map-iframe">
-                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d96737.10562045308!2d-74.08535042841811!3d40.739265258395164!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c24fa5d33f083b%3A0xc80b8f06e177fe62!2sNew%20York%2C%20NY%2C%20USA!5e0!3m2!1sen!2sin!4v1703158537552!5m2!1sen!2sin" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d96737.10562045308!2d-74.08535042841811!3d40.739265258395164!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c24fa5d33f083b%3A0xc80b8f06e177fe62!2sNew%20York%2C%20NY%2C%20USA!5e0!3m2!1sen!2sin!4v1703158537552!5m2!1sen!2sin" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" style="border:none;"></iframe>
                     </div>
                     <!-- Google Map IFrame End -->
                 </div>
             </div>
-
             <div class="row">
                 <div class="col-lg-12">
                     <!-- Contact Info Box Start -->
-                    <div class="contact-info-box">
+                    <div class="contact-info-box wow fadeInUp" data-wow-delay="0.4s" style="box-shadow: rgba(136, 165, 191, 0.48) 6px 2px 16px 0px, rgba(255, 255, 255, 0.8) -6px -2px 16px 0px; border-radius: 12px; display: flex; flex-wrap: wrap; gap: 20px; margin-top: 40px; width: 100%; padding: 30px; position:relative;">
                         <!-- Conatct Info Item Start -->
-                        <div class="contact-info-item wow fadeInUp">
+                        <div class="contact-info-item wow fadeInUp" style="width: calc(33.33% - 13.33px); display: flex; align-items: flex-start; padding:25px; background:rgba(255,255,255,0.8); backdrop-filter:blur(5px); border-radius:12px; transition:all 0.4s ease;">
                             <!-- Icon Box Start -->
-                            <div class="icon-box">
-                                <i class="fa-solid fa-phone"></i>
+                            <div class="icon-box" style="height: 60px; width: 60px; margin-right: 15px; display: flex; align-items: center; justify-content: center; border-radius:12px; flex-shrink:0;">
+                                <i class="fa-solid fa-phone" style="font-size: 20px; color:white;"></i>
                             </div>
                             <!-- Icon Box End -->
-
+            
                             <!-- Contact Info Content Start -->
-                            <div class="contact-info-content">
-                                <h3>phone number</h3>
-                                <p>(+05) 698 - 548 - 6354</p>
-                                <p>(+07) 358 - 879 - 3257</p>                               
+                            <div class="contact-info-content" style="width: calc(100% - 75px);">
+                                <h3 style="font-size: 18px; margin: 0 0 10px 0; color:#333; font-weight:600;">phone number</h3>
+                                <p style="margin: 0 0 5px 0; color:#666;">(+05) 698 - 548 - 6354</p>
+                                <p style="margin: 0; color:#666;">(+07) 358 - 879 - 3257</p>                               
                             </div>
                             <!-- Contact Info Content End -->
                         </div>
                         <!-- Conatct Info Item End -->
-
+            
                         <!-- Conatct Info Item Start -->
-                        <div class="contact-info-item wow fadeInUp" data-wow-delay="0.2s">
+                        <div class="contact-info-item wow fadeInUp" data-wow-delay="0.2s" style="width: calc(33.33% - 13.33px); display: flex; align-items: flex-start; padding:25px; background:rgba(255,255,255,0.8); backdrop-filter:blur(5px); border-radius:12px; transition:all 0.4s ease;">
                             <!-- Icon Box Start -->
-                            <div class="icon-box">
-                                <i class="fa-regular fa-envelope"></i>
+                            <div class="icon-box" style="height: 60px; width: 60px; margin-right: 15px; display: flex; align-items: center; justify-content: center; border-radius:12px; flex-shrink:0;">
+                                <i class="fa-regular fa-envelope" style="font-size: 20px; color:white;"></i>
                             </div>
                             <!-- Icon Box End -->
-
+            
                             <!-- Contact Info Content Start -->
-                            <div class="contact-info-content">
-                                <h3>e-mail support</h3>
-                                <p>hello@domain12.com</p>
-                                <p>hello@domain12.com</p>
+                            <div class="contact-info-content" style="width: calc(100% - 75px);">
+                                <h3 style="font-size: 18px; margin: 0 0 10px 0; color:#333; font-weight:600;">e-mail support</h3>
+                                <p style="margin: 0 0 5px 0; color:#666;">hello@domain12.com</p>
+                                <p style="margin: 0; color:#666;">support@domain12.com</p>
                             </div>
                             <!-- Contact Info Content End -->
                         </div>
                         <!-- Conatct Info Item End -->
-
+            
                         <!-- Conatct Info Item Start -->
-                        <div class="contact-info-item wow fadeInUp" data-wow-delay="0.4s">
+                        <div class="contact-info-item wow fadeInUp" data-wow-delay="0.4s" style="width: calc(33.33% - 13.33px); display: flex; align-items: flex-start; padding:25px; background:rgba(255,255,255,0.8); backdrop-filter:blur(5px); border-radius:12px; transition:all 0.4s ease;">
                             <!-- Icon Box Start -->
-                            <div class="icon-box">
-                                <i class="fa-solid fa-house"></i>
+                            <div class="icon-box" style="height: 60px; width: 60px; margin-right: 15px; display: flex; align-items: center; justify-content: center; border-radius:12px; flex-shrink:0;">
+                                <i class="fa-solid fa-house" style="font-size: 20px; color:white;"></i>
                             </div>
                             <!-- Icon Box End -->
-
+            
                             <!-- Contact Info Content Start -->
-                            <div class="contact-info-content">
-                                <h3>headquarter</h3>
-                                <p>2972 Westheimer Rd. Santa Ana Illinois 85486</p>
+                            <div class="contact-info-content" style="width: calc(100% - 75px);">
+                                <h3 style="font-size: 18px; margin: 0 0 10px 0; color:#333; font-weight:600;">headquarter</h3>
+                                <p style="margin: 0; color:#666;">2972 Westheimer Rd. Santa Ana Illinois 85486</p>
                             </div>
                             <!-- Contact Info Content End -->
                         </div>
@@ -451,7 +577,33 @@
     <script src="js/wow.min.js"></script>
     <!-- Main Custom js file -->
     <script src="js/function.js"></script>
+    
+    <script>
+        // Initialize Wow.js for animations
+        new WOW().init();
+        
+        // Add hover effect to contact info items
+        $(document).ready(function(){
+            $('.contact-info-item').hover(
+                function() {
+                    $(this).css('transform', 'translateY(-5px)');
+                    $(this).find('.icon-box').css('transform', 'rotate(10deg) scale(1.1)');
+                },
+                function() {
+                    $(this).css('transform', 'translateY(0)');
+                    $(this).find('.icon-box').css('transform', 'rotate(0) scale(1)');
+                }
+            );
+            
+            // Add animation to form inputs on focus
+            $('input, textarea').focus(function(){
+                $(this).parent().addClass('active');
+            }).blur(function(){
+                if($(this).val() == '') {
+                    $(this).parent().removeClass('active');
+                }
+            });
+        });
+    </script>
 </body>
-
-<!-- Mirrored from html.awaikenthemes.com/inspaire/contact.html by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 05 May 2025 11:13:23 GMT -->
 </html>
