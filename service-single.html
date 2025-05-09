@@ -35,6 +35,30 @@
 	<!-- Main Custom Css -->
 	<link href="css/custom.css" rel="stylesheet" media="screen">
 </head>
+<style>
+    .sidebar-cta-Body {
+        border-radius:20px 20px 20px 20px;
+       box-shadow: 0px 16px 48px 0px rgba(0, 0, 0, 0.176);
+    }
+    #cta{
+        margin-top:30px;
+    }
+    .service-feature-image img{
+        border-radius:20px 20px 20px 20px;
+       box-shadow: 0px 16px 48px 0px rgba(0, 0, 0, 0.176);
+    }
+    .project-gallery-images img{
+          border-radius:20px 20px 20px 20px;
+        box-shadow: 0px 16px 48px 0px rgba(0, 0, 0, 0.176);
+    }
+    .service-entry-image img{
+          border-radius:20px 20px 20px 20px;
+      box-shadow: 0px 16px 48px 0px rgba(0, 0, 0, 0.176);
+    }
+    .sidebar-cta-box {
+    box-shadow: 0px 16px 48px 0px rgba(0, 0, 0, 0.176);
+    }
+</style>
 <body>
 
     <!-- Preloader Start -->
@@ -57,20 +81,33 @@
 					</a>
 					<!-- Logo End -->
 
+					
+    <!-- Header Start -->
+	<header class="main-header">
+		<div class="header-sticky">
+			<nav class="container">
+				<div class="navbar navbar-expand-lg">
+					<!-- Logo Start -->
+					<a class="navbar-brand" href="index.html">
+						<img src="img/logo.png" alt="Logo">
+					</a>
+					<!-- Logo End -->
+
 					<!-- Main Menu Start -->
 					<div class="collapse navbar-collapse main-menu">
                         <div class="nav-menu-wrapper">
                             <ul class="navbar-nav mr-auto" id="menu">
                                 <li class="nav-item submenu"><a class="nav-link" href="index.html">Home</a>
                                     <ul>
-                                        <li class="nav-item"><a class="nav-link" href="index-2.html">Home - Image</a></li>
+                                        <!-- <li class="nav-item"><a class="nav-link" href="index-2.html">Home - Image</a></li> -->
                                         <li class="nav-item"><a class="nav-link" href="index-video.html">Home - Video</a></li>
                                         <li class="nav-item"><a class="nav-link" href="index-slider.html">Home - Slider</a></li>
                                     </ul>
                                 </li>                                
-                                <li class="nav-item"><a class="nav-link" href="about.html">About Us</a>
+                              
                                 <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
                                 <li class="nav-item"><a class="nav-link" href="projects.html">Projects</a></li>
+                                <li class="nav-item"><a class="nav-link" href="about.html">About Us</a>
                                 <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
                                 <li class="nav-item submenu"><a class="nav-link" href="#">Pages</a>
                                     <ul>                                        
@@ -82,16 +119,23 @@
                                         <li class="nav-item"><a class="nav-link" href="404.html">404</a></li>
                                     </ul>
                                 </li>
-                                <li class="nav-item"><a class="nav-link" href="contact.html">Contact Us</a></li>                             
+                                <li class="nav-item"><a class="nav-link" href="contact.html">Career</a></li>                             
                             </ul>
                         </div>
                         <!-- Header Btn Start -->
-                        <div class="header-btn d-inline-flex">
+                        <div class="header-btn d-inline-flex " style="border-radius: 10px;">
                             <a href="contact.html" class="btn-default">get in touch</a>
                         </div>
                         <!-- Header Btn End -->
 					</div>
 					<!-- Main Menu End -->
+					<div class="navbar-toggle"></div>
+				</div>
+			</nav>
+			<div class="responsive-menu"></div>
+		</div>
+	</header>
+	<!-- Header End -->
 					<div class="navbar-toggle"></div>
 				</div>
 			</nav>
@@ -130,34 +174,95 @@
                 <div class="col-lg-4">
                     <!-- Service Sidebar Start -->
                     <div class="service-sidebar">
-                        <!-- Service Category List Start -->
-                        <div class="service-catagery-list wow fadeInUp">
-                            <h3>services category</h3>
-                            <ul>
-                                <li><a href="#">residential design</a></li>
-                                <li><a href="#">commercial interiors</a></li>
-                                <li><a href="#">space planning</a></li>
-                                <li><a href="#">furniture selection</a></li>
-                                <li><a href="#">lighting design</a></li>
-                                <li><a href="#">color consultation</a></li>
-                                <li><a href="#">3D visualization</a></li>
-                                <li><a href="#">custom renovations</a></li>
-                            </ul>
+                     <!-- Sidebar CTA Box Start -->
+                     <div class="sidebar-cta-box wow fadeInUp" data-wow-delay="0.2s">
+                           
+
+                        <!-- Sidebar CTA Body Start -->
+                        <div class="sidebar-cta-Body">
+                           <!-- Project Detail Item Start -->
+                           <div class="project-detail-item">
+                            <div class="icon-box">
+                                <i class="fa-regular fa-calendar"></i>
+                            </div>
+                            <div class="project-detail-content">
+                                <h3>project date:</h3>
+                                <p>15 november, 2024</p>
+                            </div>
                         </div>
-                        <!-- Service Category List End -->
+                        <!-- Project Detail Item End -->
+
+                        <!-- Project Detail Item Start -->
+                        <div class="project-detail-item">
+                            <div class="icon-box">
+                                <i class="fa-regular fa-clock"></i>
+                            </div>
+                            <div class="project-detail-content">
+                                <h3>project duration:</h3>
+                                <p>12 hours / week</p>
+                            </div>
+                        </div>
+                        <!-- Project Detail Item End -->
+
+                        <!-- Project Detail Item Start -->
+                        <div class="project-detail-item">
+                            <div class="icon-box">
+                                <i class="fa-regular fa-circle-check"></i>
+                            </div>
+                            <div class="project-detail-content">
+                                <h3>category:</h3>
+                                <p>residential interior renovation</p>
+                            </div>
+                        </div>
+                        <!-- Project Detail Item End -->
+
+                        <!-- Project Detail Item Start -->
+                        <div class="project-detail-item">
+                            <div class="icon-box">
+                                <i class="fa-regular fa-user"></i>
+                            </div>
+                            <div class="project-detail-content">
+                                <h3>client / company:</h3>
+                                <p>luxe interiors</p>
+                            </div>
+                        </div>
+                        <!-- Project Detail Item End -->
+
+                        <!-- Project Detail Item Start -->
+                        <div class="project-detail-item">
+                            <div class="icon-box">
+                                <i class="fa-solid fa-location-dot"></i>
+                            </div>
+                            <div class="project-detail-content">
+                                <h3>project location:</h3>
+                                <p>789 maple avenue, design city</p>
+                            </div>
+                        </div>
+                        <!-- Project Detail Item End -->
+
+                            <!-- Sidebar CTA Contact Start -->
+                            <div class="sidebar-cta-contact">
+                              
+                                <!-- Sidebar CTA Contact Item Start -->
+
+                                <!-- Sidebar CTA Contact Item Start -->
+                                <div class="sidebar-cta-contact-item">
+                                 
+                                </div>
+                                <!-- Sidebar CTA Contact Item Start -->
+                            </div>
+                            <!-- Sidebar CTA Contact End -->
+                        </div>
+                        <!-- Sidebar CTA Body End -->
+                    </div>
+                    <!-- Sidebar CTA Box End -->
 
                         <!-- Sidebar CTA Box Start -->
                         <div class="sidebar-cta-box wow fadeInUp" data-wow-delay="0.2s">
-                            <!-- Sidebar CTA Image Start -->
-                            <div class="sidebar-cta-image">
-                                <div class="image-anime">
-                                    <img src="images/sidebar-cta-img.jpg" alt="">
-                                </div>
-                            </div>
-                            <!-- Sidebar CTA Image End -->
+                           
 
                             <!-- Sidebar CTA Body Start -->
-                            <div class="sidebar-cta-Body">
+                            <div class="sidebar-cta-Body" id="cta"> 
                                 <!-- Sidebar CTA Content Start -->
                                 <div class="sidebar-cta-content">
                                     <h3>how can we help</h3>
@@ -202,12 +307,64 @@
                     <!-- Service Single Content Start -->
                     <div class="service-single-content">
                         <!-- Service Feature Image Start -->
-                        <div class="service-feature-image">
+                        <div class="service-feature-image" style="border-radius:10px 10px 10px 10px">
                             <figure class="image-anime reveal">
                                 <img src="images/service-1.jpg" alt="">
                             </figure>
                         </div>
                         <!-- Service Feature Image End -->
+
+                        <!-- gallery  start-->
+
+                         <!-- Project Gallery Images Start -->
+                            <div class="project-gallery gallery-items">
+                                <h2 class="text-anime-style-2">Project gallery</h2>
+
+                                <div class="project-gallery-images">
+                                    <!-- Project Gallery img Start -->
+                                    <div class="project-gallery-img wow fadeInUp" data-cursor-text="View">
+                                        <a href="images/gallery-7.jpg">
+                                            <figure class="image-anime reveal">
+                                                <img src="images/gallery-7.jpg" alt="">
+                                            </figure>
+                                        </a>
+                                    </div>
+                                    <!-- Project Gallery img End -->
+
+                                    <!-- Project Gallery img Start -->
+                                    <div class="project-gallery-img wow fadeInUp" data-cursor-text="View">
+                                        <a href="images/gallery-1.jpg">
+                                            <figure class="image-anime reveal">
+                                                <img src="images/gallery-1.jpg" alt="">
+                                            </figure>
+                                        </a>
+                                    </div>
+                                    <!-- Project Gallery img End -->
+
+                                    <!-- Project Gallery img Start -->
+                                    <div class="project-gallery-img wow fadeInUp" data-cursor-text="View">
+                                        <a href="images/gallery-3.jpg">
+                                            <figure class="image-anime reveal">
+                                                <img src="images/gallery-3.jpg" alt="">
+                                            </figure>
+                                        </a>
+                                    </div>
+                                    <!-- Project Gallery img End -->
+
+                                    <!-- Project Gallery img Start -->
+                                    <div class="project-gallery-img wow fadeInUp" data-cursor-text="View">
+                                        <a href="images/gallery-5.jpg">
+                                            <figure class="image-anime reveal">
+                                                <img src="images/gallery-5.jpg" alt="">
+                                            </figure>
+                                        </a>
+                                    </div>
+                                    <!-- Project Gallery img End -->
+                                </div>
+                            </div>
+                            <!-- Project Gallery Images End -->
+
+                        <!-- gallery end -->
 
                         <!-- Secvice Entry Start -->
                         <div class="service-entry">
