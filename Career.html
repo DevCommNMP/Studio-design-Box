@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="zxx">
+
+<!-- Mirrored from html.awaikenthemes.com/inspaire/index-video.html by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 05 May 2025 11:13:13 GMT -->
+<head>
+	<!-- Meta -->
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+	<meta name="description" content="">
+	<meta name="keywords" content="">
+	<meta name="author" content="Awaiken">
+	<!-- Page Title -->
+    <title>Inspaire - Architecture and Interior Design HTML Template</title>
+	<!-- Favicon Icon -->
+	<link rel="shortcut icon" type="image/x-icon" href="images/favicon.png">
+	<!-- Google Fonts Css-->
+	<link rel="preconnect" href="https://fonts.googleapis.com/">
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&amp;display=swap" rel="stylesheet">
+	<!-- Bootstrap Css -->
+	<link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
+	<!-- SlickNav Css -->
+	<link href="css/slicknav.min.css" rel="stylesheet">
+	<!-- Swiper Css -->
+	<link rel="stylesheet" href="css/swiper-bundle.min.css">
+	<!-- Font Awesome Icon Css-->
+	<link href="css/all.min.css" rel="stylesheet" media="screen">
+	<!-- Animated Css -->
+	<link href="css/animate.css" rel="stylesheet">
+    <!-- Magnific Popup Core Css File -->
+	<link rel="stylesheet" href="css/magnific-popup.css">
+	<!-- Mouse Cursor Css File -->
+	<link rel="stylesheet" href="css/mousecursor.css">
+	<!-- Main Custom Css -->
+	<link href="css/custom.css" rel="stylesheet" media="screen">
+  <style>
+    /* :root {
+      --primary-color: #1a3b5d;
+      --secondary-color: #e54b4b;
+      --accent-color: #f7b731;
+    } */
+
+    /* body {
+      font-family: 'Montserrat', sans-serif;
+      line-height: 1.6;
+      color: #4a4a4a;
+    } */
+
+    .hero {
+      background: linear-gradient(rgba(26, 59, 93, 0.9), rgba(26, 59, 93, 0.8)),
+                  url('https://images.unsplash.com/photo-1600585154340-be6161a56a0c') center/cover;
+      min-height: 90vh;
+      display: flex;
+      align-items: center;
+      padding: 80px 0;
+
+    }
+
+    .hero h1 {
+      font-size: calc(2rem + 2.5vw);
+      font-weight: 700;
+      letter-spacing: -0.05rem;
+      line-height: 1.2;
+      margin-bottom: 1.5rem;
+      color: var(--white-color);
+    }
+
+    .section-title {
+      font-weight: 700;
+      letter-spacing: -0.03rem;
+      margin-bottom: 2.5rem;
+      position: relative;
+      display: inline-block;
+      color: var(--white-color);
+    }
+
+    .section-title::after {
+      content: '';
+      position: absolute;
+      bottom: -15px;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 60px;
+      height: 3px;
+      background: var(--primary-color);
+    
+    }
+
+    .job-card {
+      border: none;
+      border-radius: 12px;
+      transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+      height: 100%;
+    }
+
+    .job-card:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 10px 30px rgba(0,0,0,0.12);
+    }
+
+    .job-card .card-body {
+      padding: 2rem;
+    }
+
+    .badge-pill {
+      background: rgba(229, 75, 75, 0.1);
+      color: var(--secondary-color);
+      padding: 8px 20px;
+      font-weight: 500;
+    }
+
+    .benefit-card {
+      background: #fff;
+      border-radius: 12px;
+      padding: 2.5rem 1.5rem;
+      text-align: center;
+      height: 100%;
+      transition: all 0.3s ease;
+    }
+
+    .benefit-card:hover {
+      background: var(--primary-color);
+      color: white;
+    }
+
+    .benefit-card:hover i {
+      color: white !important;
+    }
+
+    .benefit-icon {
+      font-size: 2.5rem;
+      margin-bottom: 1.5rem;
+      color: var(--primary-color);
+    }
+
+    .cta-section {
+      background: var(--primary-color);
+      position: relative;
+      overflow: hidden;
+    }
+
+    .wave-pattern {
+      position: absolute;
+      bottom: -1px;
+      left: 0;
+      width: 100%;
+      height: 100px;
+      background: url('data:image/svg+xml;charset=utf8,<svg viewBox="0 0 1440 150" xmlns="http://www.w3.org/2000/svg"><path d="M0 96l60-5.3C120 85 240 75 360 69.3 480 64 600 64 720 74.7 840 85 960 107 1080 112s240-5 300-10.7l60-5.3V0H0z" fill="%23ffffff"/></svg>') repeat-x;
+    }
+
+    @media (max-width: 768px) {
+      .hero {
+        min-height: 70vh;
+        padding: 60px 0;
+      }
+      
+      .job-card {
+        margin-bottom: 1.5rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+    <div class="preloader">
+		<div class="loading-container">
+			<div class="loading"></div>
+			<div id="loading-icon"><img src="images/loader.svg" alt=""></div>
+		</div>
+	</div>
+	<!-- Preloader End -->
+
+    <!-- Header Start -->
+	<header class="main-header">
+		<div class="header-sticky">
+			<nav class="container">
+				<div class="navbar navbar-expand-lg">
+					<!-- Logo Start -->
+					<a class="navbar-brand" href="index.html">
+						<img src="img/logo.png" alt="Logo">
+					</a>
+					<!-- Logo End -->
+
+					<!-- Main Menu Start -->
+					<div class="collapse navbar-collapse main-menu">
+                        <div class="nav-menu-wrapper">
+                            <ul class="navbar-nav mr-auto" id="menu">
+                                <li class="nav-item submenu"><a class="nav-link" href="index.html">Home</a>
+                                    <ul>
+                                        <!-- <li class="nav-item"><a class="nav-link" href="index-2.html">Home - Image</a></li> -->
+                                        <li class="nav-item"><a class="nav-link" href="index-video.html">Home - Video</a></li>
+                                        <li class="nav-item"><a class="nav-link" href="index-slider.html">Home - Slider</a></li>
+                                    </ul>
+                                </li>                                
+                              
+                                <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
+                                <li class="nav-item"><a class="nav-link" href="projects.html">Projects</a></li>
+                                <li class="nav-item"><a class="nav-link" href="about.html">About Us</a>
+                                <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
+                                <li class="nav-item submenu"><a class="nav-link" href="#">Pages</a>
+                                    <ul>                                        
+                                        <li class="nav-item"><a class="nav-link" href="service-single.html">Service Details</a></li>
+                                        <li class="nav-item"><a class="nav-link" href="project-single.html">Project Details</a></li>
+                                        <li class="nav-item"><a class="nav-link" href="blog-single.html">Blog Details</a></li>
+                                        <li class="nav-item"><a class="nav-link" href="image-gallery.html">Image Gallery</a></li>
+                                        <li class="nav-item"><a class="nav-link" href="faqs.html">FAQs</a></li>
+                                        <li class="nav-item"><a class="nav-link" href="404.html">404</a></li>
+                                    </ul>
+                                </li>
+                                <li class="nav-item"><a class="nav-link" href="contact.html">Career</a></li>                             
+                            </ul>
+                        </div>
+                        <!-- Header Btn Start -->
+                        <div class="header-btn d-inline-flex " style="border-radius: 10px;">
+                            <a href="contact.html" class="btn-default">get in touch</a>
+                        </div>
+                        <!-- Header Btn End -->
+					</div>
+					<!-- Main Menu End -->
+					<div class="navbar-toggle"></div>
+				</div>
+			</nav>
+			<div class="responsive-menu"></div>
+		</div>
+	</header>
+
+
+
+
+
+
+
+
+
+
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-lg-10 text-center text-white">
+          <h1>Shape the Future of Interior Design</h1>
+          <p class="lead mb-5 fs-5">Join our team of visionaries creating spaces that inspire</p>
+          <a href="#positions" class="btn btn-light btn-lg px-5 py-3 rounded-pill fw-semibold">
+            Explore Opportunities <i class="fas fa-arrow-right ms-2"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Open Positions -->
+  <section id="positions" class="py-6">
+    <div class="container">
+      <h2 class="section-title text-center mb-5"  style="margin-top: 40px;">Current Openings</h2>
+      <div class="row g-4">
+        <div class="col-lg-6">
+          <div class="job-card shadow-sm">
+            <div class="card-body">
+              <span class="badge badge-pill mb-3">Design Team</span>
+              <h3 class="h4 mb-3">Senior Interior Designer</h3>
+              <div class="d-flex gap-4 mb-3 text-muted">
+                <span><i class="fas fa-map-marker-alt me-2"></i>Mumbai</span>
+                <span><i class="fas fa-clock me-2"></i>Full-Time</span>
+              </div>
+              <p class="mb-4">Lead residential projects from concept to completion. Require 5+ years experience and proficiency in AutoCAD.</p>
+              <a href="#" class="btn btn-primary px-4 py-2 rounded-pill">Apply Now</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-6">
+          <div class="job-card shadow-sm">
+            <div class="card-body">
+              <span class="badge badge-pill mb-3">Visualization</span>
+              <h3 class="h4 mb-3">3D Design Visualizer</h3>
+              <div class="d-flex gap-4 mb-3 text-muted">
+                <span><i class="fas fa-map-marker-alt me-2"></i>Bengaluru</span>
+                <span><i class="fas fa-clock me-2"></i>Hybrid</span>
+              </div>
+              <p class="mb-4">Create immersive 3D visualizations using latest tools. Portfolio submission required.</p>
+              <a href="#" class="btn btn-primary px-4 py-2 rounded-pill">Apply Now</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Benefits -->
+  <section class="py-6">
+    <div class="container">
+      <h2 class="section-title text-center mb-5" style="margin-top: 40px;">Why Join Us?</h2>
+      <div class="row g-4">
+        <div class="col-md-4">
+          <div class="benefit-card">
+            <i class="fas fa-brain benefit-icon"></i>
+            <h4 class="h5 mb-3">Creative Freedom</h4>
+            <p class="mb-0">Innovate with cutting-edge projects and premium materials</p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="benefit-card">
+            <i class="fas fa-heartbeat benefit-icon"></i>
+            <h4 class="h5 mb-3">Wellness Focus</h4>
+            <p class="mb-0">Comprehensive health plans and wellness programs</p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="benefit-card">
+            <i class="fas fa-rocket benefit-icon"></i>
+            <h4 class="h5 mb-3">Career Growth</h4>
+            <p class="mb-0">Annual training budget and mentorship programs</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Section -->
+  <section class="cta-section text-white py-6" style="margin-top: 20px;">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-lg-8 text-center">
+          <h3 class="h2 mb-4">Ready to Create Something Extraordinary?</h3>
+          <p class="lead mb-5">We're always looking for passionate talent. Even if you don't see a perfect match, let's talk!</p>
+          <div class="d-flex gap-3 justify-content-center">
+            <a href="#" class="btn btn-light btn-lg px-5 py-3 rounded-pill fw-semibold">Submit Application</a>
+            <a href="mailto:careers@luxe.com" class="btn btn-outline-light btn-lg px-5 py-3 rounded-pill fw-semibold">Contact HR</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="wave-pattern"></div>
+  </section>
+
+  <script src="js/jquery-3.7.1.min.js"></script>
+  <!-- Bootstrap js file -->
+  <script src="js/bootstrap.min.js"></script>
+  <!-- Validator js file -->
+  <script src="js/validator.min.js"></script>
+  <!-- SlickNav js file -->
+  <script src="js/jquery.slicknav.js"></script>
+  <!-- Swiper js file -->
+  <script src="js/swiper-bundle.min.js"></script>
+  <!-- Counter js file -->
+  <script src="js/jquery.waypoints.min.js"></script>
+  <script src="js/jquery.counterup.min.js"></script>
+  <!-- Isotop js file -->
+  <script src="js/isotope.min.js"></script>
+  <!-- Magnific js file -->
+  <script src="js/jquery.magnific-popup.min.js"></script>
+  <!-- SmoothScroll -->
+  <script src="js/SmoothScroll.js"></script>
+  <!-- Parallax js -->
+  <script src="js/parallaxie.js"></script>
+  <!-- MagicCursor js file -->
+  <script src="js/gsap.min.js"></script>
+  <script src="js/magiccursor.js"></script>
+  <!-- Text Effect js file -->
+  <script src="js/SplitText.js"></script>
+  <script src="js/ScrollTrigger.min.js"></script>
+  <!-- YTPlayer js File -->
+  <script src="js/jquery.mb.YTPlayer.min.js"></script>
+  <!-- Wow js file -->
+  <script src="js/wow.min.js"></script>
+  <!-- Main Custom js file -->
+  <script src="js/function.js"></script>
+</body>
+</html>
